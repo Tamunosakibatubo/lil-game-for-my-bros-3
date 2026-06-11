@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f0f13;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background-color: #1a1a24;
+    text-align: center;
+    padding: 48px 40px;
+    border-radius: 20px;
+    border: 0.5px solid rgba(255, 255, 255, 0.08);
+    width: 100%;
+    max-width: 420px;
+}
+
+.container #text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #e8e8f0;
+    margin-bottom: 32px;
+    letter-spacing: -0.01em;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    background-color: #12121a;
+    padding: 16px 20px;
+    border-radius: 14px;
+    border: 0.5px dashed rgba(255, 120, 160, 0.3);
+}
+
+.btns h2 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #555568;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 28px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.15s ease, transform 0.1s ease;
+}
+
+#yesbtn {
+    background: linear-gradient(135deg, #7c6fdd, #5a4fcf);
+    color: #ffffff;
+}
+
+.btns button:last-child {
+    background: transparent;
+    color: #b0aec8;
+    border: 0.5px solid rgba(255, 255, 255, 0.15);
+}
+
+button:hover {
+    opacity: 0.85;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+.q1 {
+    background-color: #1a1a24;
+    text-align: center;
+    padding: 48px 40px;
+    border-radius: 20px;
+    border: 0.5px solid rgba(255, 255, 255, 0.08);
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.q1 h2 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #e8e8f0;
+    line-height: 1.5;
+}
+
+.q1 img {
+    width: 100%;
+    border-radius: 12px;
+    border: 0.5px solid rgba(255, 255, 255, 0.06);
+    object-fit: cover;
+}
+
+.q1 input[type="text"] {
+    width: 100%;
+    background: #12121a;
+    border: 0.5px solid rgba(255, 255, 255, 0.15);
+    border-radius: 999px;
+    padding: 12px 20px;
+    color: #e8e8f0;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.q1 input[type="text"]::placeholder {
+    color: #555568;
+}
+
+.q1 input[type="text"]:focus {
+    border-color: rgba(124, 111, 221, 0.6);
+}
+#bgvideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+@media (max-width: 768px) {
+    .container, .q1 {
+        padding: 24px 20px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .container h2, .q1 h2 {
+        font-size: 16px;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    #yesbtn {
+        width: 100%;
+    }
+
+    .q1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .q1 input[type="text"] {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .q1 iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 50px !important;
+    }
+
+    #bgvideo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
